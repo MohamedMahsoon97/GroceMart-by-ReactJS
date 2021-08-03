@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {Component} from 'react';
+import ReactDOM from 'react-dom';
+import Header from './Components/Header/Header';
+import About from './Components/About-Section/About';
+import Parallax from './Components/Parallax-Section/Parallax'
+import Footer from './Components/Footer/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// import fontawesome 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import {
+  faSearch , faShoppingCart , faBars , faPaperPlane ,
+  faMapMarker ,  faPhone , faEnvelope , faArrowRight 
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add ( fab , faSearch , faShoppingCart , faBars ,
+              faMapMarker , faPhone , faEnvelope ,
+              faArrowRight , faPaperPlane );
+
+class App extends Component {
+    render () {
+        return (
+            <div>
+                <Header />
+                <About />
+                <Parallax />
+                <Footer />
+            </div>
+        )
+    }
+};
 
 export default App;

@@ -1,0 +1,93 @@
+a{
+    text-decoration: none !important;
+}
+.about {
+    padding: 10px 30px 10px 60px;
+}
+.about-sections {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.about-img
+{
+    width: 50%;
+}
+.about-img img
+{
+    width: 100%;
+}
+.about-content
+{
+    position: relative;
+    width: 50%;
+    margin-left: 70px;
+    z-index: -1;
+}
+.about-content .heading4
+{
+    letter-spacing: .05em;
+    text-transform: none;
+    color: #7fd02c;
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.about-content .heading2
+{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.about-content .text
+{
+    font-size: 16px;
+    font-family: "Lato", -apple-system;
+    font-weight : 400;
+    letter-spacing : 0.75px;
+    line-height : 24px;
+    width: 80%;
+}
+.about-content .group
+{
+    display: flex;
+    margin-top: 40px;
+}
+.about-content .group-xl
+{
+    display: flex;
+}
+.about-content .group .group-xl .button span
+{
+    background-color: #c01f28;
+    color: #fff;
+    padding: 11px 15px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 30px;
+}
+.about-content .group-xl > a span:hover
+{
+    background-color: #721116;
+}
+.team-navy-name a
+{
+    color: #151515;
+    letter-spacing: 1px;
+}
+.team-navy-name a:hover
+{
+    text-decoration: none;
+}
+.team-navy-status
+{
+    color: #7fd02c;
+}
+.about-content .group img
+{
+    margin-left: 20px;
+}

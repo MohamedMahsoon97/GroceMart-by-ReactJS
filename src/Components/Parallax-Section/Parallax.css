@@ -1,0 +1,62 @@
+
+.parallax
+{
+    background-image: url('../Images/download.png');
+    background-size: cover;
+    height: 350px;
+
+    position: relative;
+    padding: 70px 50px;
+}
+.parallax::before
+{
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+}
+.parallax .row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.parallax .parallax-content
+{
+    padding: 0px 17px;
+    z-index: 1;
+}
+.parallax .parallax-content .box-header .box-icon
+{
+    margin-bottom: 20px;
+}
+.parallax .parallax-content .box-header .box-icon img
+{
+    width: 50px;
+    height: 50px;
+}
+.parallax .parallax-content .box-title a
+{
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.parallax .parallax-content .box-title a:hover
+{
+    text-decoration: none;
+    color: #7fd02c;
+}
+.parallax .parallax-content .box-text
+{
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+#parallax-content
+{
+    transition: all 1s ease-in-out;
+}
